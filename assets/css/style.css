@@ -22,85 +22,195 @@ p {
   font-size: 16px;
 }
   
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+h1 {
+  font-size: 200%;
+}
+
+h2 {
+  display: flex;
+  margin: 2% 0;
+  font-size: 250%;
+}
+
+h3 {
+  margin: 2% 0;
+  margin-bottom: 10px;
+  font-size: 200%;
+  text-align: center;
+}
+
+header nav {
+  display: flex;
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+nav a {
+  background-color: unset;
+  color: var(--navlink-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--light);
+}
+
+main {
+  display: flex;
+  flex: 1 1 0;
+  max-width: 100%;
+  margin: 2% auto;
+}
+
+section {
+  /* display: flex; */
+  /* How to format this? how to get lines to go straight across*/
+  border-bottom: 1px solid white;
+}
+
+section p {
+  display: flex; /* How to format this to look nicer?*/
+  margin: 2% 0;
+  font-size: 110%;
+}
+
+.banner {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/abstract-wallpaper-for-iphone-by-WALLSBYJFL-idownloadblog-touchid-768x1620.jpg");
+  background-size: cover;
+  background-position: center;
+  /* opacity: 0.6; */
+  /* transform: rotate(90deg); */
+}
+
+.float-left {
+  float: left;
+  margin-right: 25px;
+}
+
+.float-right {
+  float: right;
+  margin-left: 25px;
+}
+
+.content { 
+  width: 75%;
+  display: inline-block; /* I want to have a few sections like the challenge photo
+                            I am not sure where to do so to have a big first section,
+                            then the smaller 4 sections below it, in a grid. What 
+                            selectors/ way should I divvy it up?*/
+  margin-left: 20px;
+}
+
+.container {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #070725;
+  color: #ffffff;
+}
+
+.container img {
+  max-height: 200px;
+}
+
+.container h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+#about-me img {
+  /* display: left; */
+  margin: 10px auto;
+  max-width: 150px;
+  max-height: 150px;
+} 
+
+#first-project {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 400px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: 070725;
+  color: white;
+}
+
+#first-project img {
+  max-height: 200px;
+}
+
+#first-project h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+footer h1 {
+  display: flex;
+  font-size: 48px;
+}
+
+footer nav {
+  display: flex;
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+footer nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+footer nav ul li {
+  display: flex;
+  margin-left: 25px;
+}
+
+
+@media screen and (max-width: 768px) {
   header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1%;
-    /* use CSS var() function to reference a variable created above */
-    background-color: var(--dark);
-    color: var(--light);
-  }
-
-  h1 {
-    font-size: 200%;
-  }
-
-  h2 {
-    margin: 2% 0;
-    font-size: 250%;
-  }
-  /* This adds the icons you see in section 2 lesson 25
-  a[href*='.css']::after {
-    content: '📝';
-    display: inline-block;
-    margin-left: 3px;
-  }
-  */
-  nav ul {
-    display: flex;
-    justify-content: space-between;
-    min-width: 300px;
-  }
-  
-  nav a {
-    background-color: unset;
-    color: var(--navlink-color);
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  nav a:hover {
-    color: var(--light);
+    flex-direction: column;
   }
 
   main {
-    display: flex;
-    flex: 1 1 0;
-    max-width: 96%;
-    margin: 2% auto;
+    max-width: 1200px;
   }
-  
-  article {
-    /* If we were to change the value of `--dark`, then all references to it would change automatically */
-    border-bottom: 1px solid var(--dark);
-  }
-  
-  article p {
-    margin: 2% 0;
-    font-size: 110%;
-  }
-  
-  article ul {
-    margin-left: 5%;
-    font-size: 110%;
-    list-style: circle;
-  }
-  
-  footer {
-    display: flex;
-    justify-content: center;
-    padding: 2%;
-    background-color: var(--dark);
-    color: var(--light);
-  }
-  
-  @media screen and (max-width: 768px) {
-    header {
-      flex-direction: column;
-    }
-  
-    main {
-      max-width: 1200px;
-    }
-  }
+}
