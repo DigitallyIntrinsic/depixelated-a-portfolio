@@ -145,12 +145,22 @@ section p {
   font-size: 36px;
 }
 
+#about-me h2 {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
 #about-me img {
-  /* display: left; */
+  display: flex;
   margin: 10px auto;
   max-width: 150px;
   max-height: 150px;
 } 
+
+#about-me p {
+  text-align: center;
+}
 
 #first-project {
   margin-bottom: 20px;
@@ -180,7 +190,7 @@ footer {
   padding: 2%;
   background-color: var(--main);
   color: var(--light);
-  border-top: 2px solid salmon;
+  border-top: 2px solid var(--white);
 }
 
 footer h1 {
