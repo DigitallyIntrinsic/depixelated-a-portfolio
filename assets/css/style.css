@@ -91,7 +91,8 @@ main {
 }
 
 section p {
-  display: flex; /* How to format this to look nicer?*/
+  display: flex;
+  /* How to format this to look nicer?*/
   margin: 2% 0;
   font-size: 110%;
 }
@@ -118,9 +119,10 @@ section p {
   margin-left: 25px;
 }
 
-.content { 
+.content {
   width: 75%;
-  display: inline-block; /* I want to have a few sections like the challenge photo
+  display: flex;
+  /* I want to have a few sections like the challenge photo
                             I am not sure where to do so to have a big first section,
                             then the smaller 4 sections below it, in a grid. What 
                             selectors/ way should I divvy it up?*/
@@ -129,12 +131,12 @@ section p {
 
 .container {
   margin-bottom: 20px;
-  padding: 25px; 
+  padding: 25px;
   height: 300px;
   font-family: var(--general-font);
   background-color: var(--main);
   color: var(--white);
-  border-bottom: var(--general-border);
+  /* border-bottom: var(--general-border); */
   /* Why does adding width for a border make the whole thing expand? How do I get those
      border-bottoms to be centered. This won't matter if the grid works*/
 }
@@ -149,6 +151,17 @@ section p {
   font-size: 36px;
 }
 
+.project-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+}
+
+/* .grid {
+  border-bottom: dotted !important;
+} */
+
 #about-me {
   display: flex;
   padding: 2px;
@@ -157,6 +170,7 @@ section p {
   background-color: var(--main);
   color: var(--white);
   flex-direction: column;
+  border-bottom: var(--general-border);
 }
 
 #about-me h2 {
@@ -171,7 +185,7 @@ section p {
   margin: 10px auto;
   max-width: 150px;
   max-height: 200px;
-} 
+}
 
 #about-me-p1 {
   display: flex;
@@ -188,34 +202,41 @@ section p {
 }
 
 #first-project {
-  /* margin-bottom: 20px;
-  padding: 50px;
-  height: 400px;
-  font-family: var(--general-font);
-  background-color: 070725;
-  color: white; */
   display: flex;
   padding: 2px;
   height: 500px;
   font-family: var(--general-font);
   background-color: var(--main);
   color: var(--white);
-  flex-direction: column;
+  flex-direction: row;
+  border-bottom: var(--general-border);
+  align-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 #first-project img {
-  max-height: 200px;
+  max-height: 326px;
   display: flex;
   border-radius: 20%;
   margin: 10px auto;
 }
 
 #first-project h2 {
-  /* margin-bottom: 20px;
-  font-size: 36px; */
+  margin-bottom: 20px;
+  font-size: 44px;
   display: flex;
   margin-bottom: 20px;
   justify-content: center;
+}
+
+#first-project p {
+  display: flex;
+  margin: auto auto;
+  max-width: 768px;
+  text-align: center;
+  font-size: 22px;
 }
 
 #no-border {
