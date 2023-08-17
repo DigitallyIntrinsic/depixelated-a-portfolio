@@ -1,7 +1,7 @@
 :root {
   --main: #070725;
-  --dark: #13293d;
   --light: #fff;
+  --white: #ffffff;
   --navlink-color: #b9c6ae;
 }
 
@@ -10,11 +10,11 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   flex-direction: column;
   line-height: 1.3;
-  background-color: #070725;
+  background-color: var(--main);
 }
 
 a {
-  color: #ffffff;
+  color: var(--white);
   text-decoration: none;
 }
 
@@ -27,7 +27,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1%;
-  background-color: var(--dark);
+  background-color: var(--main);
   color: var(--light);
 }
 
@@ -106,8 +106,6 @@ section p {
   background-image: url("../images/abstract-wallpaper-for-iphone-by-WALLSBYJFL-idownloadblog-touchid-768x1620.jpg");
   background-size: cover;
   background-position: center;
-  /* opacity: 0.6; */
-  /* transform: rotate(90deg); */
 }
 
 .float-left {
@@ -131,11 +129,11 @@ section p {
 
 .container {
   margin-bottom: 20px;
-  padding: 50px;
+  padding: 50px; /* Removing this makes about me look better but pushed left, why?*/
   height: 300px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: #070725;
-  color: #ffffff;
+  background-color: var(--main);
+  color: var(--white);
 }
 
 .container img {
@@ -172,12 +170,17 @@ section p {
   font-size: 36px;
 }
 
+#no-border {
+  border-bottom: none !important;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
   padding: 2%;
-  background-color: var(--dark);
+  background-color: var(--main);
   color: var(--light);
+  border-top: 2px solid salmon;
 }
 
 footer h1 {
