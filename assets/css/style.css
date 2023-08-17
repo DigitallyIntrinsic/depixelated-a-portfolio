@@ -88,12 +88,6 @@ main {
   margin: 2% auto;
 }
 
-/* section { */
-  /* display: flex; */
-  /* How to format this? how to get lines to go straight across*/
-  /* border-bottom: 1px solid white;
-} */
-
 section p {
   display: flex; /* How to format this to look nicer?*/
   margin: 2% 0;
@@ -108,6 +102,8 @@ section p {
   background-image: url("../images/abstract-wallpaper-for-iphone-by-WALLSBYJFL-idownloadblog-touchid-768x1620.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid var(--white);
 }
 
 .float-left {
@@ -137,6 +133,8 @@ section p {
   background-color: var(--main);
   color: var(--white);
   border-bottom: 1px solid var(--white);
+  /* Why does adding width for a border make the whole thing expand? How do I get those
+     border-bottoms to be centered. This won't matter if the grid works*/
 }
 
 .container img {
