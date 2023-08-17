@@ -131,7 +131,7 @@ section p {
 
 .container {
   margin-bottom: 20px;
-  padding: 50px; 
+  padding: 25px; 
   height: 300px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: var(--main);
@@ -141,6 +141,7 @@ section p {
 
 .container img {
   max-height: 200px;
+  border-radius: 20%;
 }
 
 .container h2 {
@@ -187,21 +188,34 @@ section p {
 }
 
 #first-project {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px;
   padding: 50px;
   height: 400px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: 070725;
-  color: white;
+  color: white; */
+  display: flex;
+  padding: 2px;
+  height: 500px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: var(--main);
+  color: var(--white);
+  flex-direction: column;
 }
 
 #first-project img {
   max-height: 200px;
+  display: flex;
+  border-radius: 20%;
+  margin: 10px auto;
 }
 
 #first-project h2 {
+  /* margin-bottom: 20px;
+  font-size: 36px; */
+  display: flex;
   margin-bottom: 20px;
-  font-size: 36px;
+  justify-content: center;
 }
 
 #no-border {
