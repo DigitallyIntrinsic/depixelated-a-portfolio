@@ -33,10 +33,12 @@ header {
   background-color: var(--main);
   color: var(--light);
   border-bottom: var(--general-border);
+  margin: 0;
 }
 
 h1 {
   font-size: 200%;
+  margin: 0;
 }
 
 h2 {
@@ -52,7 +54,8 @@ h3 {
   text-align: center;
 }
 
-header nav {
+header nav,
+footer nav {
   display: flex;
   padding-top: 15px;
   margin-right: 20px;
@@ -92,9 +95,7 @@ main {
 
 section p {
   display: flex;
-  /* How to format this to look nicer?*/
-  margin: 2% 0;
-  font-size: 110%;
+  margin: auto auto;
 }
 
 .banner {
@@ -120,13 +121,12 @@ section p {
 }
 
 .content {
-  width: 75%;
   display: flex;
   /* I want to have a few sections like the challenge photo
                             I am not sure where to do so to have a big first section,
                             then the smaller 4 sections below it, in a grid. What 
                             selectors/ way should I divvy it up?*/
-  margin-left: 20px;
+  margin-left: auto auto;
 }
 
 .container {
@@ -142,25 +142,30 @@ section p {
 }
 
 .container img {
-  max-height: 200px;
+  max-height: 150px;
   border-radius: 20%;
 }
 
 .container h2 {
   margin-bottom: 20px;
-  font-size: 36px;
+  font-size: 30px;
 }
 
 .project-grid {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
-  grid-gap: 10px;
+  grid-gap: 40px;
 }
 
-/* .grid {
-  border-bottom: dotted !important;
-} */
+.grid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--white) !important;
+}
 
 #about-me {
   display: flex;
@@ -176,6 +181,7 @@ section p {
 #about-me h2 {
   display: flex;
   margin-bottom: 20px;
+  font-size: 36;
   justify-content: center;
 }
 
@@ -187,19 +193,22 @@ section p {
   max-height: 200px;
 }
 
-#about-me-p1 {
-  display: flex;
-  text-align: center;
-  margin: auto auto;
-  max-width: 768px;
-}
-
+#about-me-p1,
 #about-me-p2 {
   display: flex;
   text-align: center;
   margin: auto auto;
   max-width: 768px;
+  font-size: 110%;
 }
+
+/* #about-me-p2 {
+  display: flex;
+  text-align: center;
+  margin: auto auto;
+  max-width: 768px;
+  font-size: 110%;
+} */
 
 #first-project {
   display: flex;
@@ -224,10 +233,10 @@ section p {
 }
 
 #first-project h2 {
-  margin-bottom: 20px;
-  font-size: 44px;
   display: flex;
   margin-bottom: 20px;
+  font-size: 44px;
+  margin-right: auto;
   justify-content: center;
 }
 
@@ -251,6 +260,7 @@ footer {
   color: var(--light);
   border-top: 2px solid var(--white);
   align-items: center;
+  margin: 0;
 }
 
 footer h1 {
@@ -258,14 +268,14 @@ footer h1 {
   font-size: 48px;
 }
 
-footer nav {
+/* footer nav {
   display: flex;
   padding-top: 15px;
   margin-right: 20px;
   float: right;
   font-family: var(--general-font);
   font-size: 20px;
-}
+} */
 
 footer nav ul {
   display: flex;
