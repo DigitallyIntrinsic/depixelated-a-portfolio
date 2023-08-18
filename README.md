@@ -24,4 +24,4 @@ This is created under the MIT License convention.
 
 ---
 
-![About-me-photo](./assets/images/About-me-screnshot.png)
+![About-me-photo](./assets/images/About-me-screnshot.png "Page Screenshot")
