@@ -12,8 +12,8 @@ Thank you!
 
 Please peruse the webpage at your leisure, please follow the link below
 
-* [GitHub Repository] (https://github.com/DigitallyIntrinsic/depixelated-a-portfolio)
-* [Deployed GitHub IO] (https://digitallyintrinsic.github.io/depixelated-a-portfolio/)
+* [GitHub Repository](https://github.com/DigitallyIntrinsic/depixelated-a-portfolio)
+* [Deployed GitHub IO](https://digitallyintrinsic.github.io/depixelated-a-portfolio/)
 
 ## See something that could be better?
 
