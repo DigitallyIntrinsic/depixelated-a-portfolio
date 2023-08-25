@@ -288,12 +288,53 @@ footer nav ul li {
 }
 
 
-@media screen and (max-width: 768px) {
-  header {
-    flex-direction: column;
+@media screen and (max-width: 980px) {
+
+  body {
+      max-width: 980px;
   }
 
-  main {
-    max-width: 1200px;
+  #wrapper {
+      width: 100%;
   }
+}
+
+@media screen and (max-width: 786px) {
+
+  body {
+      max-width: 786px;
+  }
+
+  #wrapper {
+      width: 100%;
+  }
+
+  #generate {
+
+      margin-left: 10%;
+      margin-bottom: 10px;
+  }
+
+
+}
+
+@media screen and (max-width: 640px) {
+
+  body {
+      max-width: 640px;
+  }
+
+  #wrapper {
+      width: 100%;
+  }
+
+  #btn {
+      margin-top: 20px;
+  }
+
+  #generate {
+      margin-left: 22%;
+
+  }
+
 }
