@@ -2,18 +2,20 @@
 
 ## Description
 
-Please allow me to introduce digital self through these various applications and coding repositories you will find on this website.
-Feel free to explore, comment, create, or contribute to any of these projects, there is no such thing as perfect code and together 
-we can all help make our projects better as a community. 
-If you have any questions, please feel free to send me an email. 
-Thank you!
+This website contains a personal portfolio of work. While this website is a work in progress, the first groupings are going to be created from a bootcamp, with later apps and websites to be created as required.
+
+## Screenshots
+
+![First Project, prominently displayed](./assets/images/first-project.png)
+
+![Placeholder projects for later additions](./assets/images/placeholders.png)
 
 ## Usage
 
 Please peruse the webpage at your leisure, please follow the link below
 
 * [GitHub Repository](https://github.com/DigitallyIntrinsic/depixelated-a-portfolio)
-* [Deployed GitHub IO](https://digitallyintrinsic.github.io/depixelated-a-portfolio/)
+* [Deployed GitHub Application](https://digitallyintrinsic.github.io/depixelated-a-portfolio/)
 
 ## See something that could be better?
 
