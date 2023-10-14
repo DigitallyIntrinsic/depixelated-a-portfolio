@@ -299,24 +299,6 @@ footer nav ul li {
   }
 }
 
-@media screen and (max-width: 786px) {
-
-  body {
-      max-width: 786px;
-  }
-
-  #wrapper {
-      width: 100%;
-  }
-
-  #generate {
-
-      margin-left: 10%;
-      margin-bottom: 10px;
-  }
-
-
-}
 
 @media screen and (max-width: 640px) {
 
